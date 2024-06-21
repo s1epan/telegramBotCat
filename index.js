@@ -17,7 +17,7 @@ bot.api.setMyCommands([
 ])
 
 bot.command('help', async (ctx) => {
-   await ctx.reply('Возникли трудности, напиши <a href="https://t.me/l053xx">мне</a>', {
+   await ctx.reply(`Возникли трудности, напиши <a href="${process.env.TG_LINK_KEY}">мне</a>`, {
       parse_mode: 'HTML'
    })
 })
@@ -25,7 +25,7 @@ bot.command('help', async (ctx) => {
 bot.command('start', async (ctx) => {
    await ctx.react('❤')
    await console.log(ctx.msg)
-   await ctx.reply('Привет! Давай выберем тебе котика ^-^ \nдостаточно написать «cat»')
+   await ctx.reply('Привет! Давай выберем тебе кота ^-^ \nдостаточно написать «cat»')
 })
 
 bot.hears('cat', async (ctx) => {
