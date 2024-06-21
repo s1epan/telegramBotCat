@@ -46,7 +46,7 @@ bot.hears('cat', async (ctx) => {
 })
 
 bot.hears(/блин/, async (ctx) => {
-   await ctx.reply('Ругаемся? (◣_◢)')
+   await ctx.reply('Ругаемся?')
 })
 
 bot.hears('ID').filter((ctx) => {
@@ -56,7 +56,7 @@ bot.hears('ID').filter((ctx) => {
 })
 
 bot.on('msg', async (ctx) => {
-   await ctx.reply('Что-то не так... ( ╥ω╥ ) \n/help')
+   await ctx.reply('Что-то не так... ( ╥_╥ ) \n/help')
 })
 
 bot.on('edit', async (ctx) => {
