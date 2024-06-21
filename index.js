@@ -45,7 +45,7 @@ bot.hears('cat', async (ctx) => {
    })
 })
 
-bot.hears(/блять/, async (ctx) => {
+bot.hears(/блин/, async (ctx) => {
    await ctx.reply('Ругаемся? (◣_◢)')
 })
 
